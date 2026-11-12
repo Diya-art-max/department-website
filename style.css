@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+header h3 {
+    color: #e5f1e8;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* Navigation bar */
+
+nav {
+    background-color: #092d20;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+}
+
+nav ul li a:hover {
+    background-color: #32865e;
+}
+
+/* Drop-down menu */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #164b35;
+    min-width: 160px;
+    z-index: 10;
+}
+
+.dropdown-content li a {
+    padding: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Home section */
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 50, 25, 0.75),
+        rgba(0, 50, 25, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1532094349884-543bc11b234d");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e4bd55;
+    color: #172c20;
+    padding: 12px 22px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* General sections */
+
+section {
+    padding: 40px 8%;
+    margin: 20px auto;
+}
+
+section h2 {
+    color: #164b35;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e4bd55;
+    padding-bottom: 8px;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 8px;
+    border: 1px solid #d5e2d8;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #23734c;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #b8c9bd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #164b35;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f1e9;
+}
+
+/* Activities */
+
+#activities ul {
+    margin: 15px 25px;
+}
+
+#activities li {
+    padding: 5px;
+}
+
+/* Contact */
+
+#contact a {
+    color: #167144;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #092d20;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
